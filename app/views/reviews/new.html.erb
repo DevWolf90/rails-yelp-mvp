@@ -1,0 +1,9 @@
+<div class="d-flex justify-content-center my-4">
+  <div class="col-7">
+    <%= simple_form_for [@restaurant, @review] do |f| %>
+    <%= f.input :rating, as: :integer, input_html: { min: '0', max: '5' } %>
+    <%= f.input :content %>
+    <%= f.submit %>
+    <% end %>
+  </div>
+</div>

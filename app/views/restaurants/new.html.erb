@@ -1,0 +1,11 @@
+<div class="d-flex justify-content-center my-4">
+  <div class="col-7">
+    <%= simple_form_for(@restaurant) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :phone_number %>
+    <%= f.input :category, :collection => %w[chinese italian japanese french belgian]%>
+    <%= f.submit %>
+    <% end %>
+  </div>
+</div>
